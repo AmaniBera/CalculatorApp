@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.MainPage">
+
+    <Grid
+        Padding="10"
+        RowDefinitions="*,*,*,*,*,*"
+        ColumnDefinitions="*,*,*,*"
+        BackgroundColor="Black">
+
+        <Label
+            BackgroundColor="White"
+            Grid.Column="0"
+            Grid.Row="0"
+            Grid.ColumnSpan="4"
+            x:Name="InputBox"
+            Text=" " 
+            FontSize="40"
+            HorizontalTextAlignment="End">
+        </Label>
+
+
+        <Button BackgroundColor="Gray" 
+                Grid.Column="0" 
+                Grid.Row="1" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="AC"
+                x:Name="ButtonClear"
+                Clicked="ButtonClear_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="1" 
+                Grid.Row="1" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="+/-"
+                x:Name="ButtonPositiveNegative"
+                Clicked="ButtonPositiveNegative_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="2" 
+                Grid.Row="1" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="%"
+                x:Name="ButtonPercent"
+                Clicked="ButtonPercent_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Orange" 
+                Grid.Column="3" 
+                Grid.Row="1" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="/"
+                x:Name="ButtonDivide"
+                Clicked="ButtonDivide_Clicked"
+                FontSize="30"></Button>
+
+
+        <Button BackgroundColor="Gray"
+                Grid.Column="0" 
+                Grid.Row="2" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="7"
+                x:Name="ButtonSeven"
+                Clicked="ButtonSeven_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="1" 
+                Grid.Row="2" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="8"
+                x:Name="ButtonEight"
+                Clicked="ButtonEight_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="2" 
+                Grid.Row="2" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="9"
+                x:Name="ButtonNine"
+                Clicked="ButtonNine_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Orange" 
+                Grid.Column="3" 
+                Grid.Row="2" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="X"
+                x:Name="ButtonMultiply"
+                Clicked="ButtonMultiply_Clicked"
+                FontSize="30"></Button>
+
+        
+        <Button BackgroundColor="Gray" 
+                Grid.Column="0" 
+                Grid.Row="3" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="4"
+                x:Name="ButtonFour"
+                Clicked="ButtonFour_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="1" 
+                Grid.Row="3" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="5"
+                x:Name="ButtonFive"
+                Clicked="ButtonFive_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="2" 
+                Grid.Row="3" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="6"
+                x:Name="ButtonSix"
+                Clicked="ButtonSix_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Orange" 
+                Grid.Column="3" 
+                Grid.Row="3" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="-"
+                x:Name="ButtonMinus"
+                Clicked="ButtonMinus_Clicked"
+                FontSize="30"></Button>
+
+
+        <Button BackgroundColor="Gray" 
+                Grid.Column="0" 
+                Grid.Row="4" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="1"
+                x:Name="ButtonOne"
+                Clicked="ButtonOne_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="1" 
+                Grid.Row="4" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="2"
+                x:Name="ButtonTwo"
+                Clicked="ButtonTwo_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="2" 
+                Grid.Row="4" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="3"
+                x:Name="ButtonThree"
+                Clicked="ButtonThree_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Orange" 
+                Grid.Column="3" 
+                Grid.Row="4" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="+"
+                x:Name="ButtonPlus"
+                Clicked="ButtonPlus_Clicked"
+                FontSize="30"></Button>
+
+        
+        <Button BackgroundColor="Gray" 
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="5" 
+                HeightRequest="80" 
+                WidthRequest="160"
+                CornerRadius="40"
+                Text="0"
+                x:Name="ButtonZero"
+                Clicked="ButtonZero_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Gray" 
+                Grid.Column="2" 
+                Grid.Row="5" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="."
+                x:Name="ButtonDot"
+                Clicked="ButtonDot_Clicked"
+                FontSize="30"></Button>
+        <Button BackgroundColor="Orange" 
+                Grid.Column="3" 
+                Grid.Row="5" 
+                HeightRequest="80" 
+                WidthRequest="80"
+                CornerRadius="40"
+                Text="="
+                x:Name="ButtonEqual"
+                Clicked="ButtonEqual_Clicked"
+                FontSize="30"></Button>
+
+
+
+
+
+
+    </Grid>
+
+</ContentPage>
